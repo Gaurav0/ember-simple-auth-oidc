@@ -14,6 +14,9 @@ importers:
       '@babel/core':
         specifier: ^7.23.5
         version: 7.26.0
+      '@ember/string':
+        specifier: ^3.1.1
+        version: 3.1.1
       '@embroider/macros':
         specifier: ^1.13.3
         version: 1.13.3
@@ -57,9 +60,6 @@ importers:
       '@ember/optional-features':
         specifier: 2.0.0
         version: 2.0.0
-      '@ember/string':
-        specifier: 3.1.1
-        version: 3.1.1
       '@ember/test-helpers':
         specifier: ^3.3.0
         version: 3.3.1(@babel/core@7.26.0)(ember-source@5.4.0(@babel/core@7.26.0)(@glimmer/component@1.1.2(@babel/core@7.26.0))(rsvp@4.8.5)(webpack@5.89.0))(webpack@5.89.0)
@@ -4139,9 +4139,11 @@ packages:
 
   glob@5.0.15:
     resolution: {integrity: sha512-c9IPMazfRITpmAAKi22dK1VKxGDX9ehhqfABDriL/lzO92xcUKEJPQHrVA/2YHSNFB4iFlykVmWvwo48nr3OxA==}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   glob@8.1.0:
     resolution: {integrity: sha512-r8hpEjiQEYlF2QU0df3dS+nxxSIreXQS1qRhMJM0Q5NDdR386C7jb7Hwwod8Fgiuex+k0GFjgft18yvxm5XoCQ==}
@@ -4469,6 +4471,7 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.3:
     resolution: {integrity: sha512-x00IRNXNy63jwGkJmzPigoySHbaqpNuzKbBOmzK+g2OdZpQ9w+sxCN+VSB3ja7IAge2OP2qpfxTjeNcyjmW1uw==}
@@ -11307,7 +11310,7 @@ snapshots:
   ember-cli-mirage@3.0.2(pdloe3iopvad5kml7xnpzzrv6u):
     dependencies:
       '@babel/core': 7.26.0
-      '@embroider/macros': 1.13.3
+      '@embroider/macros': 1.18.1
       broccoli-file-creator: 2.1.1
       broccoli-funnel: 3.0.8
       broccoli-merge-trees: 4.2.0
@@ -11668,7 +11671,7 @@ snapshots:
 
   ember-get-config@2.1.1:
     dependencies:
-      '@embroider/macros': 1.13.3
+      '@embroider/macros': 1.18.1
       ember-cli-babel: 7.26.11
     transitivePeerDependencies:
       - '@glint/template'
